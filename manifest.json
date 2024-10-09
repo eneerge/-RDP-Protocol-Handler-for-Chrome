@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "RDP Protocol Handler for Linux",
+  "description": "Adds support for the legacy RDP protocol URI to Brave/Chrome on Linux.",
+  "version": "0.1",
+  "icons": {
+    "64": "/images/icon-64.png"
+  },
+  "permissions": ["webNavigation", "tabs","downloads"],
+  "host_permissions": ["http://rdp//*","https://rdp//*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
